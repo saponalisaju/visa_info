@@ -92,7 +92,7 @@ const Login = () => {
         <p>World Job Visa</p>
       </div>
       <div className="register-form ">
-        <h2 className=" mb-2">Login Form</h2>
+        <h2 className="text-center mb-2">Login Form</h2>
         <form className="" onSubmit={handleLogin}>
           {error && <div className="alert alert-danger">{error}</div>}
 
