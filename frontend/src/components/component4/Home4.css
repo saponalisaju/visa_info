@@ -1,0 +1,23 @@
+.main-three-head h4 {
+  padding-top: 2rem;
+}
+.image_1 img {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.main-four h1 {
+  font-weight: 100;
+  padding: 1rem;
+}
+.main-four p {
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 576px) {
+  .main-three .image_1 {
+    display: flex;
+    flex-direction: column;
+  }
+}

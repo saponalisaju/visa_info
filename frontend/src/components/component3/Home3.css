@@ -1,0 +1,70 @@
+.section-two .para-1,
+.para-2,
+.para-3 {
+  padding: 0.6rem;
+  margin-top: -1rem;
+}
+.section-two-a img {
+  width: 50px;
+  height: 50px;
+}
+
+.main-two {
+  padding: 2rem 0 6rem 0;
+}
+
+.section-two img {
+  width: 100px;
+  height: 100px;
+  margin-top: -3rem;
+  background-color: rgb(0, 208, 255);
+}
+.section-two-a h4 {
+  padding: 2rem;
+}
+.section-two-a h4 {
+  padding: 2rem;
+}
+.section-two-a p {
+  padding: 2rem;
+}
+.main-two h4 {
+  padding: 1rem;
+}
+
+.main-two h1 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+@media (max-width: 1400px) {
+  .section-two h4 {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 576px) {
+  .section-two-a {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-two-a .para-2,
+  .para-3 img {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-two {
+    background-color: rgb(255, 123, 0);
+    padding: 2rem 0 3.5rem 0;
+  }
+  .main-two h1 {
+    font-size: 2rem;
+  }
+  .main-two h4 {
+    padding: 2rem;
+  }
+}

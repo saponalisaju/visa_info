@@ -1,0 +1,122 @@
+s .component_fifteen h4,
+p,
+.icon {
+  padding: 1rem;
+}
+.component_fifteen {
+  background-color: rgba(3, 26, 48, 0.8);
+}
+.copyright {
+  margin: -15rem 0 0 10rem;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  z-index: 1000;
+  background-color: rgba(59, 95, 161, 0.8);
+  padding: 0.8rem;
+  border: 2px solid rgb(231, 216, 9);
+}
+
+.scroll-top:hover {
+  background-color: rgb(229, 233, 15);
+}
+
+.application_process {
+  width: 100vw;
+  height: 10rem;
+  font-size: 4rem;
+}
+
+.main_content_item {
+  width: 60rem;
+  box-shadow: 1rem 1rem 1.2rem rgba(119, 121, 143, 0.363);
+  background-color: white;
+  margin: -2rem auto;
+}
+.main-item-one,
+.main-item-two {
+  display: flex;
+  flex-direction: row;
+}
+
+.processing_item_one,
+.processing_item_two,
+.processing_item_three,
+.processing_item_four {
+  font-size: 1.4rem;
+  border: 1px solid rgba(235, 156, 156, 0.514);
+  width: 15rem;
+}
+
+.background_page {
+  max-width: 100vw;
+  height: 10rem;
+}
+.copyright {
+  margin: 3rem auto;
+  color: #fff;
+}
+
+@media (max-width: 810px) {
+  .main_content_item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9rem;
+    width: 30rem;
+  }
+  .main-item-one,
+  .main-item-two {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .main_content_item {
+    margin-left: 4rem;
+  }
+  .application_process {
+    height: 12rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main_content_item {
+    margin: -3rem auto 0;
+  }
+  .component_fifteen {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 412px) {
+  .main_content_item {
+    /* width: 60rem; */
+    box-shadow: 0 0 0rem rgba(119, 121, 143, 0.363);
+    background-color: white;
+  }
+
+  .processing_item_one,
+  .processing_item_two,
+  .processing_item_three,
+  .processing_item_four {
+    font-size: 1.4rem;
+    border: 0;
+    width: 20rem;
+    margin: 0 auto;
+  }
+  .main-item-one,
+  .main-item-two {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_content_item {
+    width: 100%;
+  }
+  .application_process {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+}
