@@ -17,7 +17,7 @@ const applicationRouter = require("./src/routes/applicationRoute");
 const allowedOrigins = [
   "http://localhost:3000",
   "https://worldvisa.netlify.app",
-  "https://www.worldvisa.info",
+  "https://worldvisa.info",
 ];
 const corsOptions = {
   origin: (origin, callback) => {
