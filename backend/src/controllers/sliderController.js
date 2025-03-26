@@ -31,7 +31,7 @@ exports.addSlider = async (req, res) => {
     if (image) {
       ({ secure_url, public_id } = await uploadSliderFile(
         image,
-        "ausLt/slider"
+        "visaInfo/slider"
       ));
     }
 
