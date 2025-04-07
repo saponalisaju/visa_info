@@ -5,6 +5,7 @@ import Common from "../layouts/Common";
 import "./auth.css";
 import axios from "axios";
 import apiUrl from "../secret";
+import Spinner from "react-bootstrap/Spinner";
 
 const api = axios.create({
   baseURL: `${apiUrl}/api/application`,
@@ -63,6 +64,11 @@ const Dashboard = () => {
             <h2 className="">Dashboard</h2>
             <h4 className="pb-1">Super Admin</h4>
             <hr className="dashboard_hr" />
+            {loading && (
+              <div className="text-center mt-3">
+                <Spinner animation="border" variant="primary" />
+              </div>
+            )}
           </div>
           <div className="d-flex dashboard">
             <div className="total_app">

@@ -5,6 +5,7 @@ import "../../assets/styles/main.css";
 import api from "./api";
 import apiUrl from "../../secret";
 import axios from "axios";
+import Spinner from "react-bootstrap/Spinner";
 
 const AddUserApplication = () => {
   const [applications, setApplications] = useState([]);
@@ -301,6 +302,11 @@ const AddUserApplication = () => {
 
   return (
     <>
+      {loading && (
+        <div className="text-center mt-3">
+          <Spinner animation="border" variant="primary" />
+        </div>
+      )}
       <div id="navbar-example2">
         <Common />
       </div>

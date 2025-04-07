@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Common from "../../layouts/Common";
 import "../../assets/styles/main.css";
 import api from "./api";
+import Spinner from "react-bootstrap/Spinner";
 
 const ApplicationManagement = () => {
   const [applications, setApplications] = useState([]);
@@ -98,6 +99,11 @@ const ApplicationManagement = () => {
           </Link>
         </div>
         <hr className="user_manage_hr" />
+        {loading && (
+          <div className="text-center mt-3">
+            <Spinner animation="border" variant="primary" />
+          </div>
+        )}
         <div className="d-flex search_box pb-2">
           <p className="">Show 1 to 10 entries</p>
           <input
